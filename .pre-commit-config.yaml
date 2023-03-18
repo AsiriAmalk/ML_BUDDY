@@ -1,0 +1,40 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: poetry run black --line-length=80
+        language: system
+        types: [python]
+      - id: flake8
+        name: flake8
+        entry: poetry run flake8 --max-line-length=80
+        language: system
+        types: [python]
+      - id: isort
+        name: isort
+        entry: poetry run isort
+        language: system
+        types: [python]
+      - id: pylint
+        name: pylint
+        entry: poetry run pylint
+        language: system
+        types: [python]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+default_stages: [commit]
+stages:
+  - id: pylint
+    exclude: |
+      .*/migrations/.*
+      .*/static/.*
+      .*/templates/.*
+      manage.py
+      ml_api/
+# This excludes should happen until some phase only.
+# In the future excludes only will applicable for django generated files
+exclude: ml_api|manage.py|ml_buddy
