@@ -1,0 +1,52 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Django-generated files
+*.log
+*.pot
+*.pyo
+*.sqlite3
+/staticfiles/
+
+# Virtual environment
+.venv/
+
+# Ignore secrets and sensitive information
+*.env
+*.secret
+*.key
+*.pem
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore local development settings
+*.settings/
+*.config/
+
+# Ignore other miscellaneous files
+.DS_Store
+*.swp
+
+# Poetry
+.poetry/
+__pypackages__/
+
+# Django
+local_settings.py
+
+# Static files
+node_modules/
+dist/
+
+# IDE
+*.iml
+
+# Miscellaneous
+*.bak
+*.tmp
+*.orig
+*.rej
+*.~*
