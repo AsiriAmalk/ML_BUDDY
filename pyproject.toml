@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Asiri Amal <@example.com>"]
 readme = "README.md"
-packages = [{include = "ml_buddy_d"}]
+packages = [{include = "ml_buddy"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
