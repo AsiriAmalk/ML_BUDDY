@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "ml-buddy-d"
+name = "ml-buddy"
 version = "0.1.0"
 description = ""
-authors = ["Asiri Amal <@example.com>"]
+authors = ["Asiri Amal <www.asiriamal.com>"]
 readme = "README.md"
 packages = [{include = "ml_buddy"}]
 
